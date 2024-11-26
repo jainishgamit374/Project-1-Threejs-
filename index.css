@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: f1;
+  src: url("./cyber-alert-font/CyberAlert-xRv8j.otf");
+}
+
+@font-face {
+  font-family: f2;
+  src: url("./cyber-alert-font/CyberAlertItalic-pgo9y.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: xyz;
+}
+
+html,
+body {
+  Width: 100%;
+  Height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Planet 3D</title>
+  </head>
+
+  <body>
+    <div class="canv relative w-full h-screen overflow-hidden">
+       <div class="w-full h-screen text-white absolute top-0 left-0 z-[2]">
+        <nav class="fixed top-0 left-0 w-full   z-50">
+          <div class="container mx-auto py-4 px-3 flex items-center justify-between">
+             <h1 class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">Planets</h1>
+            <div class="flex gap-5 items-center">
+              <a href="#" class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">About</a>
+              <a href="#" class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">Earth</a>
+              <a href="#" class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">Jupital</a>
+              <a href="#" class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">mars</a>
+              <a href="#" class="text-white hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-[f1]">venus</a>
+            </div>
+          </div>
+        </nav>
+        <div class="absolute top-[10%] left-1/2 -translate-x-1/2 text-center">
+          <div class="w-full h-[4.5em] overflow-hidden">
+            <h1 class="text-white font-light heading text-5xl h-full py-4 font-[f1]">Earth</h1>
+            <h1 class="text-white font-light heading text-5xl h-full py-4 font-[f1]">Jupiter</h1>
+            <h1 class="text-white font-light heading text-5xl h-full py-4 font-[f1]">Mars</h1>
+            <h1 class="text-white font-light heading text-5xl h-full py-4 font-[f1]">Venus</h1>
+          </div>
+          <p class="text-white text-sm hover:text-blue-400 hover:glow-blue hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)] transition duration-300 font-['Gilroy']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, maiores?</p>
+          <h1 class="w-full h-px bg-gradient-to-r from-transparent via-white to-transparent mt-4"></h1>
+        </div>
+       </div>
+      <canvas id="draw" class="w-full h-full absolute top-0 left-0"></canvas>
+    </div>
+  </body>
+
+  <script type="module" src="./main.js"></script>
+
+</html>
